@@ -41,7 +41,7 @@ function draw() {
     }
 
     x += step;
-    if (x > 2 * PI) {
+    if (x > TWO_PI) {
         x = 0;
     }
 }
