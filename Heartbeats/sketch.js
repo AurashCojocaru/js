@@ -3,7 +3,7 @@ const particlesPerFrame = 3;
 let particles = [];
 
 function setup() {
-    createCanvas(1920, 1080);
+    createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
@@ -36,7 +36,7 @@ class Particle {
     }
 
     isOutOfDisplay() {
-        return this.x < 0 || this.x > 1920 || this.y < 0;
+        return this.x < 0 || this.x > window.innerWidth || this.y < 0;
     }
 
     update() {
